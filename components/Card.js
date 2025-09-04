@@ -9,7 +9,7 @@ export default function Card({user, metadata}) {
               <iframe
                 src={`https://maps.google.com/maps?q=
                     ${user?.address?.geo?.lat},
-                    ${user?.address?.geo?.lang}
+                    ${user?.address?.geo?.lng}
                     &t=&z=6&ie=UTF8&iwloc=&output=embed
                     `}
                 className={`w-full ${metadata && 'h-60'}`}
